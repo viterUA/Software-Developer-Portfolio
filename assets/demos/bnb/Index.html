@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>viter B&B</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="title" content="viter B&B">
+    <meta name="description" content="viter B&B is a guesthouse with a lot of
+        activities. This guesthouse is located in Cloonalour, Tralee, Co. Kerry.">
+    <meta name="keywords" content="Fast food, Breakfast, Tralee, Ireland, Swimming Pool, Luxury Room, nature, Wine Bar">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="Mykhailo Hnylytskyi">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#1f5d3f">
+    <meta name="msapplication-TileColor" content="#1f5d3f">
+    <meta name="theme-color" content="#1f5d3f">
+    <script src="distancecalc.js"></script>
+
+<script>
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+} else if (document.getElementById("demo")) {
+    document.getElementById("demo").innerHTML = "Geolocation not supported by this browser";
+}
+
+function showPosition(position) {
+    if (document.getElementById('demo')) {
+        document.getElementById('demo').innerHTML = "Latitiute is " + position.coords.latitude + " Longitute is " + position.coords.longitude;
+    }
+}
+
+function success(position) {
+    document.getElementById('visitus').style.display = 'block';
+
+    document.getElementById('coordlat').innerHTML = position.coords.latitude;
+    document.getElementById('coordlong').innerHTML = position.coords.longitude;
+
+    document.getElementById('distance2').innerHTML = getDistanceFromLatLonInKm(52.27146849101648, -9.70090773075332,
+        position.coords.latitude, position.coords.longitude);
+}
+</script>
+  </head>
+  <body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a class="logo" href="Index.html"><img src="Images/logo.png" alt="viter B&B logo"></a>
+        <nav>
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="FeedBack.html">Feedback</a></li>
+                <li><a class="nav-cta" href="Rent.html">Book Now</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="eyebrow">Cloonalour &middot; Tralee &middot; Co. Kerry</span>
+        <h1>viter B&amp;B</h1>
+        <p>A cosy guesthouse with rooms, a swimming pool and an easy walk to everything Tralee has to offer.</p>
+        <div class="hero-actions">
+            <a class="btn btn-accent" href="Rent.html">Book Your Stay</a>
+            <a class="btn btn-outline" href="#distance">Plan Your Visit</a>
+        </div>
+    </div>
+</section>
+
+<main>
+
+    <section class="section intro">
+        <div class="wrap">
+            <p>viter B&B is a guesthouse with a lot of activities. This guest house is located in Cloonalour, Tralee, Co. Kerry.</p>
+        </div>
+    </section>
+
+    <section class="section alt" id="distance">
+        <div class="wrap">
+            <div class="card distance-card">
+                <h2>How far are you?</h2>
+                <p>Click the button below to calculate your distance to the guesthouse.</p>
+
+                <button class="btn btn-primary" onclick="navigator.geolocation.getCurrentPosition(success);">Calculate Distance</button>
+
+                <div id="visitus" class="distance-result">
+                    <p>You're <span id="distance2">0</span> mi from Cloonalour, Tralee, Co. Kerry. Come visit!</p>
+                    <p>Your current lat is: <span id="coordlat">0</span> &middot;
+                    Your current long is: <span id="coordlong">0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrap">
+            <div class="card info-card">
+                <h2>Good to Know</h2>
+                <p>The way to it is very short if you come by train or bus,
+                    as it is located on the right side of the station.
+                    Nearby there are a number of stores such as Dunnes Store, Lild etc.,
+                    also 5 metres from the guesthouse is a bike rental and if you follow the path
+                    behind the guesthouse you can take the GreenWay to Fenit to the beach,
+                    also a 10-minute walk to the theatre in the city centre, also a 5-minute walk
+                    to shopping centres, cafes, restaurants and pubs.<br><br> To book a room,
+                    we need to know your Name and Surname, Email address, the room you need,
+                    how many people will be staying, Arrival Date &amp; Time, Departure Date,
+                    whether you need to be picked up from the airport, train or bus stop.
+                    There are Single room, Double room, Disability-friendly room, a restaurant,
+                    a playground, a conference room, a swimming pool, a gym. There is
+                    an immediate room check in for a people who booked online in advance,
+                    because the room was cleaned before your arrival, and for those who
+                    arrive and book a room on the spot, the check in takes place in 25 minutes,
+                    that is during this time room is cleaned. <br><br> This guest house have
+                    the Standart requests of the Tourist Traffic Acts 1939-2003 of Ireland,
+                    and also you can check our Privacy Policy, Terms &amp; Conditions as well.
+                    <br><br> If you need the Guide Dog, we have one and people with pets
+                    are allowed to stay.<br><br> About payment system Cash, Visa, MasterCard
+                    and American Express are allowed.<br><br> Smoking is restricted in any
+                    form, there is a separate area for smoking.<br><br>The weather here is
+                    mostly humid, with a lot of rain, windy, temperatures averaging from
+                    0 to 16 degrees celsus, but it depends on the season. <br><br> Ireland
+                    has the Euro currency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section alt">
+        <div class="wrap">
+            <h2 class="section-title">Follow Us</h2>
+            <div class="pageplugin">
+                <!--Facebook Page Plaguin (https://developers.facebook.com/docs/plugins/page-plugin/)-->
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
+                nonce="zbJQEA8w"></script>
+                <div class="fb-page"
+                data-href="https://www.facebook.com/irelandbedandbreakfast/"
+                data-tabs="timeline" data-width="220" data-height="220"
+                data-small-header="false" data-adapt-container-width="true"
+                data-hide-cover="false" data-show-facepile="true"><blockquote
+                cite="https://www.facebook.com/irelandbedandbreakfast/"
+                class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/irelandbedandbreakfast/">B&amp;B Ireland</a>
+                </blockquote></div>
+
+                <!--X (https://publish.twitter.com/#)-->
+                <a class="twitter-timeline" data-lang="en"
+                data-width="220" data-height="220"
+                href="https://twitter.com/bnbowners?ref_src=twsrc%5Etfw">Tweets by bnbowners</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </section>
+
+    <section class="section rooms-section">
+        <div class="wrap">
+            <h2 class="section-title">Our Rooms</h2>
+            <p class="section-subtitle">Pick the room that suits your stay, from cosy singles to our pool-side luxury suite.</p>
+
+            <div class="place">
+
+                <div class="container">
+                    <img src="Images/rod-long-2P_ifaetDm0-unsplash.jpg" alt="room">
+
+                    <h2>Double room</h2>
+
+                    <p>Our cosy double room is ideal for couples or travellers looking for a
+                        little more space.<span class="hiddenText"> Furnished with a comfortable queen-size bed, this room
+                        offers a charming atmosphere for a relaxing stay. Each room is equipped
+                        with a tea/coffee set, a telephone to contact the reception, an en suite bathroom,
+                        a flat-screen TV, free Wi-Fi. Enjoy a restful sleep and wake up refreshed
+                        to discover the beauty of Tralee!</span></p>
+
+                    <a href="Rent.html"><div class="button">Rent now</div></a>
+
+                </div>
+
+                <div class="container">
+                    <picture>
+                        <source srcset="Images/hotel-lal-garh-fort-and-palace-kzwWwsDUvas-unsplash-croped.jpg" media="(max-width:768px)">
+                        <img src="Images/hotel-lal-garh-fort-and-palace-kzwWwsDUvas-unsplash.jpg" alt="room">
+                    </picture>
+
+                    <h2>Single room</h2>
+
+                    <p>Our single room is designed for individual travellers looking for
+                        comfort and convenience.<span class="hiddenText">With a comfortable single bed, this room will provide
+                        a relaxing stay after a day in the city.The room has a private bathroom, TV,
+                        free Wi-Fi, tea and coffee sets are necessary for a pleasant stay.
+                        Feel the warmth of our hospitality and enjoy a relaxing holiday in the centre of Tralee.</span></p>
+
+                    <a href="Rent.html"><div class="button">Rent now</div></a>
+
+                </div>
+
+                <div class="container">
+                    <img src="Images/john-cameron-_RKgdOuNzY0-unsplash.jpg" alt="room">
+
+                    <h2>Disability-friendly room</h2>
+
+                    <p>Our disability-friendly room are carefully designed to ensure a
+                        comfortable and accessible stay for all guests.<span class="hiddenText"> With a spacious layout
+                        and disability-friendly features such as wider doorways, automatic opening
+                        of all doors in the room, no bedside tables to allow easy access for
+                        wheelchair users, low tables, a low comfortable 1.5x1m bed, grab bars
+                        and barrier-free showers, this room is designed to meet the needs of guests
+                        with disabilities. Enjoy the same modern amenities as our other rooms,
+                        including a flat-screen TV, free Wi-Fi and more. Experience inclusivity
+                        and comfort during your stay at our guest house.</span></p>
+
+                    <a href="Rent.html"><div class="button">Rent now</div></a>
+
+                </div>
+
+                <div class="container">
+
+                    <div class="relative"><img src="Images/sara-dubler-Koei_7yYtIo-unsplash.jpg" alt="room">
+                    <!-- image Sign design by tamplate from https://www.canva.com/-->
+                    <div class="picture"><img src="Images/sign.png" alt="sale"></div>
+                    </div>
+
+                    <h2>Luxury room</h2>
+
+                    <p>Immerse yourself in the atmosphere of luxury and relaxation in our room
+                        with direct access to the pool.<span class="hiddenText"> Step out the door and dive into the
+                        refreshing water, soak up the sun on the sun loungers or relax with
+                        a leisurely swim. The rooms are furnished with modern furniture, have
+                        a private bathroom, TV, free Wi-Fi and all the amenities necessary for
+                        a great vacation. Whether you're looking to cool off after a day of
+                        sightseeing or simply relax by the pool, our Pool Access Room offers serene
+                        seclusion at our Tralee guest house!</span></p>
+
+                    <a href="Rent.html"><div class="button">Rent now</div></a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section alt">
+        <div class="wrap">
+            <h2 class="section-title">Reviews</h2>
+
+            <div class="reviews-grid">
+
+                <div class="review-card">
+                    <h3>"Quaint and Cosy" &middot; Rating: 4/5</h3>
+                    <p>"I had a great time in this cosy guest house. The room was small but
+                        comfortable, with all the necessary amenities for a good night rest.
+                        The owners were friendly and welcoming, making sure I had everything I
+                        needed throughout my stay. The breakfast served each morning was simple,
+                        but tasty and the home made, jams were a nice addition. All in all, an
+                        enjoyable stay in the Tralee and this place." &mdash; Ryan Gosling</p>
+                </div>
+
+                <div class="review-card">
+                    <h3>"Home Away From Home" &middot; Rating: 5/5</h3>
+                    <p>From the moment we arrived to this room with swimming pool we felt
+                        like apart of the family in this lovely guest house. The host went
+                        above and beyond to make our stay enjoyable, offering helpful tops on local
+                        attractions, activities and diwing options. Our room was pretty good with a
+                        relaxing athmosphere. Breakfast each morning was a highlight, with a variety
+                        of fresh, homemade goodies. The location of the guest house was perfect for
+                        exploring the area, with stunning scenery just a short walk away. We can't
+                        thank the hosts enough for their hospitality and would highly recommend this
+                        guest house to anyone visiting the Tralee." &mdash; Helen Navas</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="wrap footer-grid">
+        <div class="footer-brand">
+            <img src="Images/favicon.jpg" alt="viter B&B logo">
+            <span>viter B&B</span>
+        </div>
+        <ul class="footer-links">
+            <li><a href="mailto:Mylhailo.Hnylytskyi@students.ittralee.ie">Contact us</a></li>
+            <li><a href="https://www.bandbireland.com/pages/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.bandbireland.com/pages/terms-conditions">Terms &amp; Conditions</a></li>
+        </ul>
+    </div>
+
+    <p class="footer-bottom">viter B&B Copyright &copy; 2024 viter B&B - All rights reserved || Designed By: Mykhailo Hnylytskyi</p>
+
+</footer>
+  </body>
+</html>

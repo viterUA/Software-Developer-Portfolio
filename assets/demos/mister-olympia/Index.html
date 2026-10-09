@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Page</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+<div class = "box">
+
+    <div class="site-header">
+    <div class = "img">
+<!--I made the logo myself with Phoroshop -->
+<a href="#top"><img alt = "Logo" src = "image/Logo.png"></a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+
+    <div class="navigation">
+        <a class="active" href="Index.html">Home page</a>
+        <a href="History.html">Winners</a>
+        <a href="Years.html">Competition winners</a>
+        <a href="Form.html">Feedback</a>
+    </div>
+    </div>
+
+    <div class="hero">
+        <h1>Mister Olympia</h1>
+        <p>The pinnacle of professional bodybuilding since 1965.</p>
+    </div>
+
+<div class = "box2">
+
+    <p>
+        Mr. Olympia is the title awarded to the winner of the professional 
+        men's bodybuilding contest at Joe Weider's Olympia Weekend - 
+        an international bodybuilding competition that is held annually 
+        by the International Federation of BodyBuilding & Fitness (IFBB). 
+        Joe Weider created the contest to enable the Mr. Universe winners 
+        to continue competing and to earn money. The first Mr. Olympia was 
+        held on September 18, 1965, at the Brooklyn Academy of Music, 
+        New York City, with Larry Scott winning his first of two straight titles.
+        The record number of wins is eight each by Lee Haney (1984 - 1991) 
+        and Ronnie Coleman (1998 - 2005). Derek Lunsford currently holds the title.
+        In addition to the Mr. Oympia title in the Open division, other male 
+        divisions include the 212 division since 2012, the Men's Physique division 
+        since 2013, and the Classic Physique division since 2016. The film Pumping 
+        Iron (1977) featured the buildup to the 1975 Mr. Olympia in Pretoria, 
+        South Africa, and helped launch the acting careers of Arnold Schwarzenegger, 
+        Lou Ferrigno, and Franco Columbu. As well as the 
+        Ms. Olympia title, female titles include Fitness Olympia and 
+        Figure Olympia for fitness and figure competitors. All four contests occur 
+        during the same weekend. From 1994 to 2003, and again in 2012, a 
+        Masters Olympia was also crowned. Globally, a version with amateur 
+        competitors is also presented, the Mr. Olympia Amateur.
+    </p>
+
+</div>
+
+    <div class = "clearfix2"></div>
+    
+<!--This image from here https://www.oldschoollabs.com/mr-olympia-1965/ -->
+    <div class = "img">
+        <img class = "textwrap2" alt = "first-mr-olympia" src = "image/first-mr-olympia.jpg" width="300">
+    </div>
+    
+    <p>
+        Mr Olympia is a title awarded to the winner of the professional men's 
+        open category bodybuilding competition at the Olympia Fitness & 
+        Performance Weekend, an international bodybuilding competition held 
+        annually and sanctioned by theIFBB Professional League. Joe Weider 
+        created this contest to give the winners of the amateur Mr 
+        Universecompetitions the opportunity to continue competing and earning 
+        money. The first Mister Olympia was held on 18 September 1965 at the 
+        Brooklyn Academy of Music in New York City, where Larry Scott won his 
+        first of two consecutive titles. The equivalent of the female title 
+        is Miss Olympia.
+    </p>
+    
+    <div class = "clearfix1"></div>
+
+<!--This image from here https://www.american-supps.com/chris-bumstead-wins-mr-olympia-2023-classic-physique, this image croped with Photoshop-->
+    <div class = "img2">
+        <img class = "textwrap1" alt = "chris-bumstead-celebrates-winning-classic-812558555" 
+        src = "image/chris-bumstead-celebrates-winning-classic-812558555.jpg" width="320">
+    </div>
+
+        <p>
+            Christopher Adam Bumstead, known by his fans as CBum, is a Canadian 
+            IFBB Pro League professional bodybuilder. Bumstead is the reigning five-time 
+            Mr. Olympia Classic Physique Champion, winning five consecutive titles from 2019
+            to 2023. Chris Bumstead claimed his fifth Olympia title at the recently 
+            concluded 2023 Joe Weider's Olympia Fitness and Performance Weekend in Orlando,
+            FL.
+        </p>
+    
+<div class = "clearfix2"></div>
+    
+    <div class="footer">
+        <p>If you have any issue or question you can contact us by 
+        <a href= "mailto:Mykhailo.Hnylytskyi@students.ittralee.ie">mail</a><br>
+        For more information about 
+        <a href = "https://www.muscleandfitness.com/features/active-lifestyle/everything-you-need-know-about-mr-olympia/">Mister Olympia</a><br>
+        You can also check our <a href = "Sitemap.html">site map</a>.</p>
+  </div>
+
+<form>
+    <input type="BUTTON" value="Back to top of page" onclick="window.location.href='#top'">
+</form>
+
+</div>
+
+<script>
+document.querySelectorAll('.nav-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){
+        var open = btn.classList.toggle('open');
+        document.querySelector('.navigation').classList.toggle('open');
+        btn.setAttribute('aria-expanded', open);
+    });
+});
+</script>
+
+  </body>
+</html>

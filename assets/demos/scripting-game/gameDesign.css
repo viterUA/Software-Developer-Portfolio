@@ -1,0 +1,167 @@
+body{
+    background-color: #000;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.imageButton{
+    width: 170px;
+    height: 120px;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.imageButton img{
+    width: 100px;
+    height: 80px;
+}
+
+.imageButton:hover{
+    background-color: #0f6e249d;
+}
+
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+} 
+
+.player-name {
+    position: absolute;
+    top: 35%;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+
+.centerButton {
+    background-color: #000;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #333;
+}
+
+.centerButton img{
+    width: 270px;
+    height: 230px;
+}
+
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.question-container label{
+    width: 100%;
+}
+
+.answer-row {
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.answer-button {
+    width: 250px;
+    height: 100px;
+    background-color: #0000FF;
+    color: #fff;
+    font-size: 25px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.answer-button:hover {
+    background-color: #0f6e249d;
+}
+
+label{
+    background-color: #0000FF;
+    width:600px;
+    height: 50px;
+    border: 4px solid #333;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+
+}
+
+
+
+
+.savePoint{
+    color: #fff;
+}
+
+.flex-container {
+    display: flex; 
+    align-items: flex-start;
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+.middle-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-left:250px;
+}
+
+.money-table {
+    margin-left: 20px;
+    color: #cddb0c;
+    font-size: 35px;
+    border: 4px solid #333;
+    background-color: #16163b;
+    width: 25%;
+    padding-left:25px;
+}
+
+.money-table tr {
+    transition: border 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .money-table {
+        margin-left: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .money-table {
+        font-size: 0.9em; 
+    }
+
+}
+
+#nameDisplay{
+    font-size: 30px; 
+    font-weight: bold; 
+    color: #a7a1a1;
+}
+

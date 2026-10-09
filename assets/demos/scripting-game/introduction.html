@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Introduction Page</title>
+    <link rel="stylesheet" type="text/css" href="introduction.css" />
+</head>
+<body>
+    <div class = "introductionPage">
+        <h1>Welcome to the game!</h1>
+        <label>Enter your name:</label><br>
+        <input type="text" id="playerName" placeholder="Your name"><br><br>
+        <button id = "startGame"> Press to Start Game</button>
+    </div>
+
+    <script>
+
+        //https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
+        document.getElementById("startGame").onclick = function(){
+        const username = document.getElementById("playerName").value.trim();
+
+        if (username){
+            localStorage.setItem("playerName", username);
+
+            window.location.href = "Game.html";
+        }
+        else{
+            alert("Please enter the name to start!");
+        }
+    }
+    </script>
+</body>
+</html>

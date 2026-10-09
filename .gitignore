@@ -1,0 +1,16 @@
+# OS / editor files that should never be published
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log
+*.bak
+*~
+.vscode/
+.idea/
+.env*
+# installers / archives never belong on the site
+*.exe
+*.msi
+*.zip
+*.rar
+*.7z

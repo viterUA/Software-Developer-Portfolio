@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+  <title>green layout</title>
+    <meta charset='utf-8'> 
+<script src = "distancecalc.js"></script>
+<script>
+
+if (navigator.geolocation)
+{
+
+    navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+else
+{
+
+document.getElementById("demo").innerHTML="Geolocation not supported by this browser";
+}
+
+function showPosition(position) {
+   		document.getElementById ('demo').innerHTML =  "Latitiute is " + position.coords.latitude + " Longitute is " + position.coords.longitude;
+		
+	}
+	 
+
+</script>
+</head>
+<body>
+<p id="demo"></p>
+
+</body>
+</html>
+
+
+

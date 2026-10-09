@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Feedback</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="title" content="Feedback">
+    <meta name="description" content="Welcome to our feedback form! Your
+        feedback is extremely valuable to us as it helps us understand how we
+        can improve our products/services and better meet your needs. Please take
+        a few minutes to share your thoughts, suggestions or concerns with us.
+        Your input will help us improve our offerings and provide you with an even
+        better experience.">
+    <meta name="keywords" content="FeedBack, Hotel, Ireland, Tralee, positive feedback, customer feedback">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="Mykhailo Hnylytskyi">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#1f5d3f">
+    <meta name="msapplication-TileColor" content="#1f5d3f">
+    <meta name="theme-color" content="#1f5d3f">
+    <script src="distancecalc.js"></script>
+
+  </head>
+  <body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a class="logo" href="Index.html"><img src="Images/logo.png" alt="viter B&B logo"></a>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a class="active" href="FeedBack.html">Feedback</a></li>
+                <li><a class="nav-cta" href="Rent.html">Book Now</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="page-header">
+    <h1>Feedback Form</h1>
+    <p>Welcome to our feedback form! Your feedback is extremely valuable to us as
+        it helps us understand how we can improve our products/services and better meet
+        your needs. Please take a few minutes to share your thoughts, suggestions or
+        concerns with us.</p>
+</section>
+
+<main>
+    <section class="section">
+        <div class="wrap">
+            <div class="formbox">
+
+                <form action="mailto:Mykhailo.Hnylytskyi@students.ittralee.ie" method="post" enctype="text/plain">
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Subject.." rows="1" cols="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="sug">Suggestion</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="sug" name="subject" placeholder="Write something.." rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="rooms">Room</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="rooms" name="rooms">
+                            <option value="blank">Select room</option>
+                            <option value="room">Single room</option>
+                            <option value="room">Double room</option>
+                            <option value="room">Disability-friendly room</option>
+                            <option value="room">Luxury room</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label>Rate</label>
+                    </div>
+                    <div class="col-75">
+                        <div class="pill-group">
+                            <input type="radio" id="rate1" name="point" value="1"><label for="rate1">1</label>
+                            <input type="radio" id="rate2" name="point" value="2"><label for="rate2">2</label>
+                            <input type="radio" id="rate3" name="point" value="3"><label for="rate3">3</label>
+                            <input type="radio" id="rate4" name="point" value="4"><label for="rate4">4</label>
+                            <input type="radio" id="rate5" name="point" value="5"><label for="rate5">5</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="submit" value="Send Feedback">
+                    <input type="reset" value="Reset">
+                </div>
+
+              </form>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrap footer-grid">
+        <div class="footer-brand">
+            <img src="Images/favicon.jpg" alt="viter B&B logo">
+            <span>viter B&B</span>
+        </div>
+        <ul class="footer-links">
+            <li><a href="mailto:Mylhailo.Hnylytskyi@students.ittralee.ie">Contact us</a></li>
+            <li><a href="https://www.bandbireland.com/pages/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.bandbireland.com/pages/terms-conditions">Terms &amp; Conditions</a></li>
+        </ul>
+    </div>
+
+    <p class="footer-bottom">viter B&B Copyright &copy; 2024 viter B&B - All rights reserved || Designed By: Mykhailo Hnylytskyi</p>
+
+</footer>
+
+  </body>
+</html>
