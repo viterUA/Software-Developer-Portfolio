@@ -2,8 +2,7 @@
 
 **Live site: https://viterua.github.io/Software-Developer-Portfolio/**
 
-Portfolio of **Mykhailo Hnylytskyi**, a Software Development graduate of Munster Technological
-University, Ireland. It covers three years of university coursework and a final diploma project.
+Portfolio of **Mykhailo Hnylytskyi**, a software developer. It covers three years of university coursework and a final diploma project.
 Each project has a description, its tech stack, a code snippet and, where possible, a live demo.
 
 ## What's inside
