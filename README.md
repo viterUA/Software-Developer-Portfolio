@@ -29,14 +29,6 @@ Plain **HTML, CSS and JavaScript**: no frameworks, no build step, no dependencie
 - On hosts that support it, `_headers` adds clickjacking protection, HSTS and a locked-down
   Permissions-Policy.
 
-## Run it locally
-
-```
-python -m http.server 8000
-```
-
-Then open <http://localhost:8000>.
-
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/mykhailo-hnylytskyi-9b672429a/) · [GitHub](https://github.com/viterUA)
